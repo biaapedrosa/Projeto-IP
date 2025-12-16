@@ -6,11 +6,11 @@ Um jogo desenvolvido com Pygame que retrata as aventuras de um pirata em sua vol
 ---
 
 # 👥 Integrantes:
-Beatriz Freitas Souza Pedrosa
-Beatriz Pandolfi Maroja
-João Antônio Lins Carvalho de Aguiar
-João Luis de Siqueira Ribeiro
-Luísa Bispo Lócio 
+Beatriz Freitas Souza Pedrosa  
+Beatriz Pandolfi Maroja  
+João Antônio Lins Carvalho de Aguiar  
+João Luis de Siqueira Ribeiro  
+Luísa Bispo Lócio  
 Marina Cabral Nogueira Lima
 
 ---
@@ -33,11 +33,11 @@ image.py
 
 # 📋 Divisão de trabalho
 
-Beatriz Freitas Souza Pedrosa:
-Beatriz Pandolfi Maroja:
-João Antônio Lins Carvalho De Aguiar: 
-João Luis de Siqueira Ribeiro: 
-Luísa Bispo Lócio: 
+Beatriz Freitas Souza Pedrosa:  
+Beatriz Pandolfi Maroja:  
+João Antônio Lins Carvalho De Aguiar:  
+João Luis de Siqueira Ribeiro:  
+Luísa Bispo Lócio:  
 Marina Cabral Nogueira Lima: 
 
 ---
