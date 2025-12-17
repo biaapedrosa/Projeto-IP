@@ -36,7 +36,7 @@ FONTE = pygame.font.SysFont("arial", 18, bold=True)
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-ASSETS_DIR = os.path.join(BASE_DIR, "imagens_jogo")
+ASSETS_DIR = os.path.join(BASE_DIR,"assets", "images")
 SOUND_DIR = os.path.join(BASE_DIR, "sons")
 
 
