@@ -37,7 +37,7 @@ FONTE = pygame.font.SysFont("arial", 18, bold=True)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ASSETS_DIR = os.path.join(BASE_DIR,"assets", "images")
-SOUND_DIR = os.path.join(BASE_DIR, "sons")
+SOUND_DIR = os.path.join(BASE_DIR,"assets", "sons")
 
 
 def carregar_imagem(nome_arquivo, largura=None, altura=None):
@@ -103,7 +103,7 @@ def parar_musica():
 
 
 SOM_PULO = carregar_som("pulo.wav")
-SOM_MOEDA = carregar_som("moeda.ogg")
+SOM_MOEDA = carregar_som("moeda.wav")
 SOM_DIAMANTE = carregar_som("diamante.wav")
 SOM_RUM = carregar_som("rum.wav")
 SOM_INIMIGO = carregar_som("inimigo.wav")
@@ -777,4 +777,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
