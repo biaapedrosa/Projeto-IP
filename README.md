@@ -16,7 +16,7 @@ Marina Cabral Nogueira Lima
 ---
 
 # 🏗 Arquitetura:
-main.py
+main.py  
 image.py
 
 ---
@@ -33,12 +33,12 @@ image.py
 
 # 📋 Divisão de trabalho
 
-Beatriz Freitas Souza Pedrosa:  
-Beatriz Pandolfi Maroja:  
-João Antônio Lins Carvalho De Aguiar:  
-João Luis de Siqueira Ribeiro:  
-Luísa Bispo Lócio:  
-Marina Cabral Nogueira Lima: 
+- Beatriz Freitas Souza Pedrosa:  
+- Beatriz Pandolfi Maroja:  
+- João Antônio Lins Carvalho De Aguiar:  
+- João Luis de Siqueira Ribeiro:  
+- Luísa Bispo Lócio:  
+- Marina Cabral Nogueira Lima: 
 
 ---
 
@@ -46,17 +46,16 @@ Marina Cabral Nogueira Lima:
 Durante o processo de aprendizado de Python aplicado ao jogo,conseguimos estudar uma série de conceitos fundamentais da programação, como:
 - Estruturas de dados 
 - Funções (como modularizar o código e reutilizá-lo)
-- Estruturas de controle (condições if, loops for e while)
-- Manipulação de arquivos e utulização do Git e GitHub
-- Programação orientada a objetos (para organizar o código do jogo de forma mais eficiente, utilizando classes e objetos)
+- Estruturas de controle (condições if, loops, for e while)
+- Manipulação de arquivos e utilização do Git e GitHub
+- Programação orientada a objetos (POO) (para organizar o código do jogo de forma mais eficiente, utilizando classes e objetos)
 - Bibliotecas (como Pygame)
 
 ---
 
-# 🧩 Desafios e erros
-Maior erro: O maior erro da equipe, de maneira geral, foi a demora para escolher de forma definitiva o estilo do jogo e, consequentemente, o atraso para começar o código. Passamos uma quantidade significativa de tempo discutindo entre duas ideias diferentes. 
+# ❌ Principais erros
+O maior erro da equipe, de maneira geral, foi a demora para escolher de forma definitiva o estilo do jogo e, consequentemente, o atraso para entender e começar o código. Passamos uma quantidade significativa de tempo discutindo ideias diferentes e essa indecisão acabou consumindo um tempo precioso que poderia ter sido melhor utilizado no desenvolvimento efetivo do jogo. Tentando decidir qual delas seria a mais interessante e viável para o projeto, conversamos com a professora Fernanda, que nos orientou a escolher o caminho mais fácil e direto para conseguirmos tomar uma decisão clara e focar no que realmente importava. Essa orientação foi fundamental para que avançássemos na construção das ideias do jogo e realizarmos as alterações da melhor forma.
 
-Essa indecisão acabou consumindo um tempo precioso que poderia ter sido melhor utilizado no desenvolvimento efetivo do jogo. Em vez de seguir em frente com uma das opções, ficamos presos na análise e na busca pela perfeição, o que atrasou outras etapas do processo. Tentando decidir qual delas seria a mais interessante e viável para o projeto, conversamos com a professora Fernanda, que nos orientou a escolher o caminho mais fácil e direto para conseguirmos tomar uma decisão clara e focar no que realmente importava. Essa orientação foi fundamental para que avançássemos na construção das ideias do jogo e realizarmos as alterações da melhor forma.
 
 ---
 
