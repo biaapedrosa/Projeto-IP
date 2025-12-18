@@ -1,7 +1,7 @@
 # RELATÓRIO PROJETO FINAL IP
 
 # 🎮 Nome do jogo: Zarpar!🏴‍☠️
-Um jogo desenvolvido com Pygame que retrata as aventuras de um pirata em sua volta para casa, onde o objetivo principal é fugir dos obstáculos, coletar moedas, diamantes, rum e a chave para acessar o navio e escapar da ilha.
+Um jogo desenvolvido com Pygame que retrata as aventuras de um pirata em sua volta para casa, onde o objetivo principal é fugir dos obstáculos, coletar moedas, diamentes, rum e a chave para acessar o navio e escapar da ilha.
 
 ---
 
