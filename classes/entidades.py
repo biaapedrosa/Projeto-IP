@@ -2,10 +2,8 @@ import pygame
 from .config import *
 import classes.assets as assets
 
-# =========================
-# SUPERCLASSE GENÉRICA
-# =========================
 
+# SUPERCLASSE GENÉRICA
 class Elemento(pygame.sprite.Sprite):
     def __init__(self, x, y, largura, altura, cor=None, sprite=None):
         super().__init__()
@@ -20,10 +18,8 @@ class Elemento(pygame.sprite.Sprite):
         self.rect = self.image.get_rect(topleft=(x, y))
 
 
-# =========================
-# TERRENO / CENÁRIO
-# =========================
 
+# TERRENO / CENÁRIO
 class Plataforma(Elemento):
     def __init__(self, x, y, largura):
         super().__init__(
@@ -59,7 +55,7 @@ class Navio(Elemento):
     def __init__(self, x, y):
         if assets.SPRITE_NAVIO:
             bw, bh = assets.SPRITE_NAVIO.get_size()
-            largura = 180                  # 🔹 IGUAL AO ORIGINAL
+            largura = 180                  
             proporcao = largura / bw
             altura = int(bh * proporcao)
 
@@ -75,19 +71,17 @@ class Coqueiro(Elemento):
     def __init__(self, x, y):
         if assets.SPRITE_COQUEIRO:
             sprite = pygame.transform.scale(
-                assets.SPRITE_COQUEIRO, (90, 150)   # 🔹 IGUAL AO ORIGINAL
+                assets.SPRITE_COQUEIRO, (90, 150)   
             )
             super().__init__(x, y, 90, 150, sprite=sprite)
         else:
             super().__init__(x, y, 40, 80, cor=(0, 255, 0))
 
 
-# =========================
-# JOGADOR
-# =========================
 
+# JOGADOR
 class Jogador(Elemento):
-    ESCALA = 2   # 🔹 IGUAL AO ORIGINAL
+    ESCALA = 2   
 
     def __init__(self, x, y):
         if assets.SPRITE_JOGADOR_IDLE:
@@ -194,12 +188,10 @@ class Jogador(Elemento):
             self.set_image(self.frame_idle)
 
 
-# =========================
-# INIMIGO
-# =========================
 
+# INIMIGO
 class Inimigo(Elemento):
-    ESCALA = 1.5   # 🔹 IGUAL AO ORIGINAL
+    ESCALA = 1.5   
 
     def __init__(self, x, y, esq, dir_lim):
         if assets.SPRITE_INIMIGO:
@@ -242,10 +234,8 @@ class Inimigo(Elemento):
             self.rect.bottom = chao_y
 
 
-# =========================
-# COLETÁVEIS (ESCALAS ORIGINAIS)
-# =========================
 
+# COLETÁVEIS 
 class Moeda(Elemento):
     def __init__(self, x, y):
         sprite = pygame.transform.scale(

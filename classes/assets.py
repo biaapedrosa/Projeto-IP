@@ -1,4 +1,3 @@
-# classes/assets.py
 import pygame
 import os
 from .config import *
@@ -7,19 +6,23 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ASSETS_DIR = os.path.join(BASE_DIR, "assets", "images")
 SOUND_DIR = os.path.join(BASE_DIR, "sons")
 
-# =========================
+
 # FUNÇÕES
-# =========================
+def cortar_transparencia(imagem):
+    if imagem is None: return None
+    bbox = imagem.get_bounding_rect()
+    return imagem.subsurface(bbox).copy()
 
 def carregar_imagem(nome, w=None, h=None):
     caminho = os.path.join(ASSETS_DIR, nome)
     try:
         img = pygame.image.load(caminho).convert_alpha()
+        img = cortar_transparencia(img) 
         if w and h:
             img = pygame.transform.scale(img, (w, h))
         return img
     except Exception as e:
-        print(f"[AVISO] Não consegui carregar '{caminho}': {e}")
+        print(f"[AVISO] Erro: {e}")
         return None
 
 
@@ -36,10 +39,8 @@ def tocar(som):
     if som:
         som.play()
 
-# =========================
-# SPRITES (CARREGADOS NO MAIN)
-# =========================
 
+# SPRITES (CARREGADOS NO MAIN)
 SPRITE_PLATAFORMA = None
 SPRITE_JOGADOR_IDLE = None
 SPRITE_JOGADOR_WALK = None
@@ -54,6 +55,7 @@ SPRITE_CHAVE = None
 SPRITE_NAVIO = None
 SPRITE_COQUEIRO = None
 SPRITE_AREIA = None
+SPRITE_ESTRELA = None
 
 BG_IMAGE = None
 NUVENS_IMAGEM = None
