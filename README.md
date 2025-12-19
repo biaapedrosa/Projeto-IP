@@ -1,23 +1,58 @@
 # RELATÓRIO PROJETO FINAL IP
 
-# 🎮 Nome do jogo: Zarpar!🏴‍☠️
-Um jogo desenvolvido com Pygame que retrata as aventuras de um pirata em sua volta para casa, onde o objetivo principal é fugir dos obstáculos, coletar moedas, diamentes, rum e a chave para acessar o navio e escapar da ilha.
+# 🎮🏴‍☠️ Nome do jogo: Zarpar!
+Um jogo desenvolvido em Pygame que une aventura e desafio, colocando o jogador no papel de um pirata em busca de escapar de uma ilha perigosa. Ao longo da jornada, é preciso explorar o cenário, coletar itens essenciais e desviar de obstáculos, testando reflexos, estratégia e tomada de decisão para alcançar o objetivo final.
 
 ---
 
 # 👥 Integrantes:
-Beatriz Freitas Souza Pedrosa  
-Beatriz Pandolfi Maroja  
-João Antônio Lins Carvalho de Aguiar  
-João Luis de Siqueira Ribeiro  
-Luísa Bispo Lócio  
-Marina Cabral Nogueira Lima
+- Beatriz Freitas Souza Pedrosa (bfsp)
+- Beatriz Pandolfi Maroja (bpm)
+- João Antônio Lins Carvalho de Aguiar  (jalca)
+- João Luis de Siqueira Ribeiro (jlsr) 
+- Luísa Bispo Lócio (lbl5)
+- Marina Cabral Nogueira Lima (mcnl2)
 
 ---
 
-# 🏗 Arquitetura:
-main.py  
-image.py
+# 📂 Estrutura do Projeto
+
+Abaixo está a árvore de diretórios necessária para o funcionamento correto do jogo:
+
+```text
+Projeto-IP/
+├── main.py     # Arquivo principal que inicia o jogo
+├── classes/    # Pasta contendo a lógica modular e as classes do jogo
+│   ├── config.py   # Variáveis globais 
+│   ├── assets.py   # Carregamento de Imagens/Sons
+│   ├── entidades.py    # Definição das classes (Jogador, Inimigo, Itens)
+│   └── fase.py     # Lógica da fase, colisões e renderização
+└── assets/     # Pasta de recursos externos
+    ├── images/     # Arquivos de imagem 
+    │   ├── pirata.png          
+    │   ├── pirata_andando.png  
+    │   ├── pirata_pulando.png  
+    │   ├── carangueijo.png     
+    │   ├── moeda.png           
+    │   ├── diamante.png        
+    │   ├── rum.png             
+    │   ├── chave.png          
+    │   ├── navio.png           
+    │   ├── coqueiro.png        
+    │   ├── background.png      
+    │   ├── nuvens.png          
+    │   ├── areia.png           
+    │   └── estrela.png         
+    └── sons/    # Arquivos de áudio 
+        ├── pulo.wav            
+        ├── moeda.wav           
+        ├── diamante.wav        
+        ├── rum.wav             
+        ├── inimigo.wav         
+        ├── vitoria.wav         
+        ├── gameover.wav        
+        └── musica_fundo.ogg    
+```
 
 ---
 
@@ -27,7 +62,18 @@ image.py
 ---
 
 # 🛠 Ferramentas, bibliotecas e frameworks
-[FERRAMENTAS] 
+- **Pygame**: é o principal framework utilizado para a construção do jogo, atuando como o motor responsável pela execução e controle da aplicação. Gerencia o game loop, renderiza gráficos/textos, processa entradas (teclado) e controla o áudio via classes Sprite e Surface.
+- **Bibliotecas os e sys**: utilizadas para garantir que o jogo encontre as pastas de sons e imagens em qualquer computador e feche o processo corretamente ao sair (manipulação de arquivos).
+- **Arquitetura Modular (POO)**: o código foi separado em classes (Jogador, Fase, Assets). Isso torna o projeto organizado, fácil de corrigir e pronto para receber novas fases.
+- **Versionamento**: uso de **Git e GitHub** para controle de versão e organização das etapas de desenvolvimento.
+
+---
+
+# 💡 Conceitos utilizados
+Durante o processo de aprendizado de Python aplicado ao jogo, conseguimos estudar uma série de conceitos fundamentais da programação, como:
+- **Estruturas de dados**: uso de listas e grupos de sprites para armazenar e gerenciar múltiplas entidades do jogo, como plataformas, inimigos e itens coletáveis.
+- **Estruturas de controle**: utilização de laços de repetição (while e for) para manter o jogo em execução e percorrer os elementos do cenário, além de condicionais (if) para implementar física, colisões e regras de vitória e derrota.
+- **Modularização**: divisão do código em múltiplos arquivos e classes, facilitando a leitura, manutenção e reutilização do código.
 
 ---
 
@@ -42,17 +88,6 @@ image.py
 
 ---
 
-# 💡 Ferramentas e conceitos utilizados
-Durante o processo de aprendizado de Python aplicado ao jogo,conseguimos estudar uma série de conceitos fundamentais da programação, como:
-- Estruturas de dados 
-- Funções (como modularizar o código e reutilizá-lo)
-- Estruturas de controle (condições if, loops, for e while)
-- Manipulação de arquivos e utilização do Git e GitHub
-- Programação orientada a objetos (POO) (para organizar o código do jogo de forma mais eficiente, utilizando classes e objetos)
-- Bibliotecas (como Pygame)
-
----
-
 # ❌ Principais erros
 O maior erro da equipe, de maneira geral, foi a demora para escolher de forma definitiva o estilo do jogo e, consequentemente, o atraso para entender e começar o código. Passamos uma quantidade significativa de tempo discutindo ideias diferentes e essa indecisão acabou consumindo um tempo precioso que poderia ter sido melhor utilizado no desenvolvimento efetivo do jogo. Tentando decidir qual delas seria a mais interessante e viável para o projeto, conversamos com a professora Fernanda, que nos orientou a escolher o caminho mais fácil e direto para conseguirmos tomar uma decisão clara e focar no que realmente importava. Essa orientação foi fundamental para que avançássemos na construção das ideias do jogo e realizarmos as alterações da melhor forma.
 
@@ -60,7 +95,7 @@ O maior erro da equipe, de maneira geral, foi a demora para escolher de forma de
 ---
 
 # 💣Maior desafio
-O maior desafio que enfrentamos foi a organização e distribuição do tempo, especialmente na última semana de aula, quando precisávamos entregar 1 prova e 3 trabalhos em pouquíssimo tempo. A carga de atividades era intensa e estava espalhada ao longo da semana, o que dificultava a coordenação e a reunião da equipe para discutir as diversas partes do projeto. Esse cenário exigiu de nós uma gestão mais eficaz do tempo e das responsabilidades, para conseguirmos dar conta de todas as demandas e garantir a qualidade das entregas. 
+O maior desafio que enfrentamos foi a organização e distribuição do tempo, especialmente na última semana de aula, quando precisávamos entregar uma prova e três trabalhos em pouquíssimo tempo. A carga de atividades era intensa e estava espalhada ao longo da semana, o que dificultava a coordenação e a reunião da equipe para discutir as diversas partes do projeto. Esse cenário exigiu de nós uma gestão mais eficaz do tempo e das responsabilidades, para conseguirmos dar conta de todas as demandas e garantir a qualidade das entregas. 
 
 ---
 

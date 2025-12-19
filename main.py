@@ -32,6 +32,12 @@ def main():
 
     assets.BG_IMAGE = assets.carregar_imagem("background.png", LARGURA_TELA, ALTURA_TELA)
     assets.NUVENS_IMAGEM = assets.carregar_imagem("nuvens.png")
+
+    if assets.NUVENS_IMAGEM:
+        assets.NUVENS_IMAGEM = pygame.transform.scale(
+            assets.NUVENS_IMAGEM, (250, 150)
+        )
+
     assets.FONTE = pygame.font.SysFont("arial", 18, bold=True)
 
     # SONS
