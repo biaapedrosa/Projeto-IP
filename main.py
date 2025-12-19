@@ -32,11 +32,17 @@ def main():
 
     assets.BG_IMAGE = assets.carregar_imagem("background.png", LARGURA_TELA, ALTURA_TELA)
     assets.NUVENS_IMAGEM = assets.carregar_imagem("nuvens.png")
+
+    if assets.NUVENS_IMAGEM:
+        assets.NUVENS_IMAGEM = pygame.transform.scale(
+            assets.NUVENS_IMAGEM, (250, 150)
+        )
+
     assets.FONTE = pygame.font.SysFont("arial", 18, bold=True)
 
     # SONS
     assets.SOM_PULO = assets.carregar_som("pulo.wav")
-    assets.SOM_MOEDA = assets.carregar_som("moeda.ogg")
+    assets.SOM_MOEDA = assets.carregar_som("moeda.wav")
     assets.SOM_DIAMANTE = assets.carregar_som("diamante.wav")
     assets.SOM_RUM = assets.carregar_som("rum.wav")
     assets.SOM_INIMIGO = assets.carregar_som("inimigo.wav")
