@@ -42,7 +42,12 @@ Projeto-IP/
     │   ├── background.png      
     │   ├── nuvens.png          
     │   ├── areia.png           
-    │   └── estrela.png         
+    │   ├── estrela.png
+    │   └── Prints/     # Prints do jogo (README)
+    │       ├── Print_inicio.jfif
+    │       ├── Print_plataforma.jfif
+    │       ├── Print_morte.jfif
+    │       └── Print_final.jfif
     └── sons/    # Arquivos de áudio 
         ├── pulo.wav            
         ├── moeda.wav           
@@ -51,13 +56,27 @@ Projeto-IP/
         ├── inimigo.wav         
         ├── vitoria.wav         
         ├── gameover.wav        
-        └── musica_fundo.ogg    
+        └── musica_fundo.ogg        
 ```
 
 ---
 
 # 📸 Capturas de tela
-[FOTOS DO JOGO]
+![Imagem da tela inicial](assets/images/Prints/Print_inicio.jfif)
+
+*Figura 1 – Tela inicial* 
+
+![Imagem do personagem em cima da plataforma](assets/images/Prints/Print_plataforma.jfif)
+
+*Figura 2 – Personagem na plataforma*
+
+![Imagem da morte para o carangueijo](assets/images/Prints/Print_morte.jfif)
+
+*Figura 3 – Morte para o caranguejo*  
+
+![Imagem do fim dojogo](assets/images/Prints/Print_final.jfif)
+
+*Figura 4 – Tela final do jogo*
 
 ---
 
@@ -66,6 +85,7 @@ Projeto-IP/
 - **Bibliotecas os e sys**: utilizadas para garantir que o jogo encontre as pastas de sons e imagens em qualquer computador e feche o processo corretamente ao sair (manipulação de arquivos).
 - **Arquitetura Modular (POO)**: o código foi separado em classes (Jogador, Fase, Assets). Isso torna o projeto organizado, fácil de corrigir e pronto para receber novas fases.
 - **Versionamento**: uso de **Git e GitHub** para controle de versão e organização das etapas de desenvolvimento.
+- **ChatGPT**: Dado o tempo apertado, contar com o ChatGPT como consultor foi de grande ajuda. A ferramenta contribuiu para economizar horas de debug, auxiliando na identificação de erros simples que poderiam passar despercebidos. Além disso, ele foi muito útil para gerar imagens do nosso jogo.
 
 ---
 
@@ -79,17 +99,17 @@ Durante o processo de aprendizado de Python aplicado ao jogo, conseguimos estuda
 
 # 📋 Divisão de trabalho
 
-- Beatriz Freitas Souza Pedrosa:  
-- Beatriz Pandolfi Maroja:  
-- João Antônio Lins Carvalho De Aguiar:  
-- João Luis de Siqueira Ribeiro:  
-- Luísa Bispo Lócio:  
-- Marina Cabral Nogueira Lima: 
+- **Beatriz Freitas Souza Pedrosa:**  Desenvolvimento do código e adição dos aquivos de som
+- **Beatriz Pandolfi Maroja:**  Separação do código em classes e desenvolvimento do README
+- **João Antônio Lins Carvalho De Aguiar:**  Seleção das pngs do jogo e criação dos slides
+- **João Luis de Siqueira Ribeiro:**  Desenvolvimento do código e seleção dos sons do jogo
+- **Luísa Bispo Lócio:**  Separação do código em classes e finalização do README
+- **Marina Cabral Nogueira Lima:** Desenvolvimento do código, criação dos slides e seleção das pngs do jogo
 
 ---
 
 # ❌ Principais erros
-O maior erro da equipe, de maneira geral, foi a demora para escolher de forma definitiva o estilo do jogo e, consequentemente, o atraso para entender e começar o código. Passamos uma quantidade significativa de tempo discutindo ideias diferentes e essa indecisão acabou consumindo um tempo precioso que poderia ter sido melhor utilizado no desenvolvimento efetivo do jogo. Tentando decidir qual delas seria a mais interessante e viável para o projeto, conversamos com a professora Fernanda, que nos orientou a escolher o caminho mais fácil e direto para conseguirmos tomar uma decisão clara e focar no que realmente importava. Essa orientação foi fundamental para que avançássemos na construção das ideias do jogo e realizarmos as alterações da melhor forma.
+O maior erro da equipe, de maneira geral, foi a demora para escolher de forma definitiva o estilo do jogo e, consequentemente, o atraso para entender e começar o código. Passamos uma quantidade significativa de tempo discutindo ideias diferentes e essa indecisão acabou consumindo um tempo precioso que poderia ter sido melhor utilizado no desenvolvimento efetivo do jogo.
 
 
 ---
